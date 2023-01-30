@@ -1,0 +1,118 @@
+@media screen and (max-width: 1220px) {
+  .container {
+    padding: 0 20px;
+  }
+  .header {
+    .container {
+      .header__menu {
+        display: flex;
+        justify-content: space-between;
+        .menu__icon {
+          margin-right: 120px;
+        }
+        .logo {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .footer {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      .map-timetable {
+        margin-right: 0;
+      }
+      .logo-network {
+        margin-right: 100px;
+      }
+    }
+  }
+  .main {
+    .container {
+      .house__building {
+        .center {
+          width: 80%;
+        }
+      }
+      .map {
+
+        .map__bg {
+          width: 100%;
+          left: 0;
+          bottom: 0;
+          content: url("../images/map.png");
+        }
+      }
+      .house-steps {
+        .steps {
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
+          grid-template-areas:
+          ".. step1 .. step2 .."
+          ".. step3 .. step4 .."
+          ".. step5 .. step6 ..";
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1135px){
+  .house__main {
+    .article{
+      column-gap: 20px;
+    }
+  }
+  .consult {
+    .consult__image {
+      margin-right: 20px;
+    }
+  }
+  .guarantee__items {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .consult {
+    .consult__image {
+      display: none;
+    }
+    .consult__info {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .house__main {
+    .article{
+      align-items: center;
+      flex-direction: column;
+      .article__image {
+        order: 1;
+        width: 70%;
+        margin: 31px;
+        .article__houses {
+          width: 100%;
+          img {
+            width: 100px;
+          }
+        }
+      }
+      .article__info {
+        order: 2;
+        a {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 745px) {
+
+}
